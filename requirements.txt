@@ -5,4 +5,5 @@ seaborn
 kaggle
 tensorflow-gpu
 click
-mosestokenizer
+nltk
+sacremoses
