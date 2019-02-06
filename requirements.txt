@@ -7,3 +7,6 @@ tensorflow-gpu
 click
 nltk
 sacremoses
+gensim
+lightgbm
+sklearn
