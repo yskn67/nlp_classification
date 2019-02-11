@@ -38,8 +38,8 @@ labels = list({label for df in (train, test) for label in df['artist']})
 
 X_train = np.array([get_sentence_vector(text, embedding_size, tokenizer, ft_model) for text in train['text']])
 y_train = np.array([labels.index(label) for label in train['artist']])
-X_test = np.array([get_sentence_vector(text, embedding_size, tokenizer, ft_model) for text in train['text']])
-y_test = np.array([labels.index(label) for label in train['artist']])
+X_test = np.array([get_sentence_vector(text, embedding_size, tokenizer, ft_model) for text in test['text']])
+y_test = np.array([labels.index(label) for label in test['artist']])
 
 X_train, X_valid, y_train, y_valid = train_test_split(
     X_train, y_train, test_size=0.2, random_state=57)
